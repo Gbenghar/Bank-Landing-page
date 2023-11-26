@@ -13,11 +13,23 @@ body{
     font-size: $font-med;
     font-weight: 300;
     color: $GrayishBlue;
+    &.noscroll{
+        overflow: hidden;
+    }
 }
 a, a:visited, a:hover{
     text-decoration: none;
 }
+//spacing
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
 
+//spacing
+.container{
+    padding: 1.0625rem, 1.5px;
+}
 //flexbox
 .flex{
     display: flex;

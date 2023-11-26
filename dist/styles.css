@@ -1,3 +1,7 @@
+.has-fade {
+  visibility: hidden;
+}
+
 @keyframes fade-in {
   from {
     visibility: hidden;
@@ -8,11 +12,12 @@
     opacity: 0;
   }
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
 .fade-in {
-  animation: fade-out 300ms ease-in-out forwards;
+  animation: fade-in 200ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -30,7 +35,7 @@
   }
 }
 .fade-out {
-  animation: fade-out 300ms ease-in-out forwards;
+  animation: fade-out 200ms ease-in-out forwards;
 }
 
 html {
@@ -54,6 +59,15 @@ body {
 
 a, a:visited, a:hover {
   text-decoration: none;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container {
+  padding: 1.0625rem, 1.5px;
 }
 
 .flex {
@@ -94,12 +108,14 @@ button, .button {
 
 .header {
   margin-bottom: 1.7rem;
+  position: relative;
+  z-index: 1;
 }
 .header.open .overlay {
   display: block;
   animation: fade-in 300ms ease-in-out forwards;
 }
-.header.open .header__menu span:first-child {
+.header.open .header__toggle span:first-child {
   transform: rotate(45deg);
 }
 .header.open span:nth-child(2) {
@@ -117,7 +133,8 @@ button, .button {
   background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
 }
 .header nav {
-  padding: 1.0625rem, 1.5px;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 .header__logo img {
   width: 8.8125rem;
@@ -133,6 +150,22 @@ button, .button {
 }
 .header__toggle span:not(:last-child) {
   margin-bottom: 5px;
+}
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: hsl(0, 0%, 100%);
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+.header__menu a {
+  display: flex;
+  padding: 0.625rem;
+  color: hsl(233, 26%, 24%);
+  justify-content: center;
 }
 .header__links a {
   position: relative;

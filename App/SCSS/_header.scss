@@ -1,14 +1,16 @@
 .header {
     margin-bottom: 1.7rem;
-    //hamburger open styles
+    position: relative;
+    z-index: 1;
     
+    //hamburger open styles
     &.open{
         .overlay{
          display: block;
          animation: fade-in 300ms ease-in-out forwards;
         }
 
-        .header__menu
+        .header__toggle
         span:first-child{
           transform: rotate(45deg);
        }
@@ -21,7 +23,7 @@
    }
    .overlay{
     position: fixed;
-    top: 4.2rem;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -30,7 +32,11 @@
 
    
     nav {
-        padding: 1.0625rem, 1.5px;
+        position: relative;
+        background-color: $white;
+        padding-top: 1.0625rem;
+        padding-bottom:1.0625rem ;
+
     }
 
     &__logo {
@@ -39,7 +45,8 @@
             height: 1.375rem;
         }
     }
-    &__toggle {
+
+    &__toggle {//Mobile Menu Toggle
          span {
             display: block;
             width: 26px;
@@ -54,6 +61,24 @@
             }
         }
        
+    }
+    &__menu{
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        background: $White;
+        margin-top: 1.5rem;
+        padding: 1.625rem;
+        border-radius: 5px;
+        
+        a{
+            display: flex;
+            padding: 0.625rem;
+            color: $DarkBlue;
+            justify-content: center;
+        }
+        
     }
     &__links {
         a {
