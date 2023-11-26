@@ -1,0 +1,111 @@
+.hero {
+    background-color: $VeryLightGray;
+  
+     .container {
+  
+      @include breakpoint-up(large){    
+        display: flex;
+        align-items: center;
+      }
+    }
+  
+    &__image {
+      position: relative;
+      background-image: url('/images/bg-intro-mobile.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-height: 17.5rem;
+
+      @include breakpoint-up(large){
+      flex: 3;
+      order: 2;
+      height: 41rem;
+      background-image: none; 
+    }
+
+        &::before { 
+
+          @include breakpoint-up(large){
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('/images/bg-intro-desktop.svg');        
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 122%;
+            background-position: 0% 83%;
+          }
+        }
+
+     &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background-image: url('/images/image-mockups.png');
+         background-size: 93%;
+         background-repeat: no-repeat;
+         background-position: center bottom;
+
+         @include breakpoint-up(medium){
+          background-size: 52%;
+        }
+        @include breakpoint-up(large){
+          width: 83%;
+          height: 115%;
+          background-size: 93%;
+          background-position: center 150%;
+          left: 22%;
+        }
+      }
+    }
+
+    &__text{
+        text-align: center;
+
+        @include breakpoint-up(large){    
+            flex: 2;
+            order: 1;
+            text-align: left;
+          }
+        h1{
+            font-weight: 300;
+            font-size: 2.31rem;
+            line-height: 1.15;
+            color: $DarkBlue;
+            margin-bottom: 1.5rem;
+
+            @include breakpoint-up(large){
+              font-size: $font-xlg;
+        }
+
+        p{
+            line-height: 1.5;
+            margin-bottom: 2.25rem;
+        }
+
+    }}
+    //   @include breakpoint-up(medium){
+    //     min-height: 25rem;
+    //     background-position: center 70%;
+    //   }
+  
+    
+  
+    //   &::before, &::after {
+    //     border: 1px solid magenta;
+    //   }
+  
+    
+  
+    
+  
+    
+  
+    //    
+    //   }
+    // }
+  
+  }

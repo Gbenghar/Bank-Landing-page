@@ -52,8 +52,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 - Created the necessary folders ad files to be used.
-- Started with the header component which includes; the home-logo, hamburger for the mobile view, the menu tabs ad button for the desktop view. They were being hidden in different view modes with the help of creating a media query to handle. hide-for-mobile and hide-for-desktop and making them to display and hide by viewport.
-- I proceeded to adding functionality to the hamburger menu button and other "clicks".
+- Started with the header component which includes; the home-logo, hamburger for the mobile view, the menu tabs and button for the desktop view. They were being hidden in different view modes with the help of creating a media query to handle. hide-for-mobile and hide-for-desktop and making them to display and hide by viewport.
+- I proceeded to adding functionality to the hamburger menu button and other "clicks" with JavaScript.
+- I worked on ensuring proper display of different aspect o the web page with different screen-sizes by ensuring optimum responsiveness using mixins in SCSS.
 
 ### Built with
 
