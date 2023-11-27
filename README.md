@@ -69,7 +69,6 @@ I learnt other intriguing uses of SCSS markup
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@gbenghar](https://www.frontendmentor.io/profile/gbenghar)
 - Twitter - [@realgbenghar](https://www.twitter.com/realgbenghar)
 
