@@ -41,7 +41,7 @@ Users should be able to:
 - Solution URL: (https://github.com/Gbenghar/Landing-page)
 
 ## My process
-- Created the necessary folders ad files to be used.
+- Created the necessary folders and files to be used.
 - Started with the header component which includes; the home-logo, hamburger for the mobile view, the menu tabs and button for the desktop view. They were being hidden in different view modes with the help of creating a media query to handle. hide-for-mobile and hide-for-desktop and making them to display and hide by viewport.
 - I proceeded to adding functionality to the hamburger menu button and other "clicks" with JavaScript.
 - I worked on ensuring proper display of different aspect o the web page with different screen-sizes by ensuring optimum responsiveness using mixins in SCSS.
