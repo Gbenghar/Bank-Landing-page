@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshots/Screenshot%20Capture%20-%202023-11-27%20-%2001-07-25.png)
-![](./Screenshots/Screenshot%20Capture%20-%202023-11-27%20-%2001-07-51.png)
-![](./Screenshots/Screenshot%20Capture%20-%202023-11-27%20-%2001-08-12.png)
+![](.App/Screenshots/Screenshot%20Capture%20-%202023-11-27%20-%2001-07-25.png)
+![](./App/Screenshots/Screenshot%20Capture%20-%202023-11-27%20-%2001-07-51.png)
+![](.App/Screenshots/Screenshot%20Capture%20-%202023-11-27%20-%2001-08-12.png)
 
 ### Links
 
